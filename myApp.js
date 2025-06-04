@@ -5,6 +5,12 @@ const app = express();
 
 app.use(helmet.hidePoweredBy());
 
+app.use(
+  helmet({
+    xFrameOptions: { action: "deny" },
+  }),
+);
+
 
 
 
