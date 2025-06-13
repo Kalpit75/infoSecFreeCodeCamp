@@ -23,6 +23,8 @@ app.use(
   })
 );
 
+app.use(helmet.dnsPrefetchControl());
+
 
 
 
