@@ -1,8 +1,8 @@
 const express = require('express');
 const helmet = require('helmet');
-const bcrypt = require('bcrypt');
 const app = express();
 
+const bcrypt = require('bcrypt');
 
 app.use(helmet.hidePoweredBy());
 
