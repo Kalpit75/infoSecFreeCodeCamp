@@ -13,11 +13,12 @@ app.use(helmet.noSniff());
 
 app.use(helmet.ieNoOpen());
 
+
+var ninetyDaysInSeconds =  90*24*60*60;
 app.use(helmet());
 app.use(
   helmet.hsts({
-    ninetyDaysInSeconds: 90*24*60*60,
-    maxAge: timeInSeconds,
+    maxAge: ninetyDaysInSeconds,
     force: true
   })
 );
